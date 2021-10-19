@@ -2,8 +2,8 @@
 const int buttonPin_direita = 2;
 const int buttonPin_esquerda = 3;
 const int ledPin_direita =  13;
-const int ledPin_esquerda =  9; // the number of the LED pin
-int buttonState = 0;         // variable for reading the pushbutton status
+const int ledPin_esquerda =  9; 
+int buttonState = 0;         
 int direita;
 int esquerda;
 int laststatedireita=0;
@@ -16,7 +16,7 @@ void setup() {
 }
 
 void loop() {
-  direita=digitalRead(buttonPin_direita);// put your main code here, to run repeatedly:
+  direita=digitalRead(buttonPin_direita);
   esquerda=digitalRead(buttonPin_esquerda);
 if(direita!=laststatedireita)
 {
